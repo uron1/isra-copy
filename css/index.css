@@ -158,6 +158,8 @@ header {
     letter-spacing: 0;
     padding: 1px;
     font-weight: bold;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .topSection_inquiry_button {
@@ -446,5 +448,56 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
     letter-spacing: 1.5px;
 }
 
+/* anotherSkill */
+.anotherSkill{
+    background-color: rgb(32, 109, 180);
+    font-size: 12px;
+    color: white;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+    padding: 20px 0px;
+}
+
+.anotherSkill_important{
+    color: var(--maincolor);
+
+}
+
+/* learn */
+.learn_isaraSmall{
+    font-size:12px;
+}
+
+.learn > .sectionTitle{
+    margin: 20px 0px 35px 0px;
+}
+
+.learn > p:not(.sectionTitle){
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+.learn > .newLine{
+    margin-bottom: 10px;
+}
+
+.learn_abilities{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.learn_abilities > img{
+    width: 20%;
+    margin: 5px;
+}
+
+.learn > p:last-child{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 13px 0px 20px 0px;
+}
 
 /* medium screen */
