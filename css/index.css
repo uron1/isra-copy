@@ -4,6 +4,9 @@
     --maincolor: #E3BB60;
     /* LS →　letter spaceing */
     --normalLS: 0.1rem;
+
+    /* LH →　LineHeight */
+    --normalLH: 1.5rem;
 }
 
 /* small screen */
@@ -14,6 +17,24 @@ body {
     font-family: 'Helvetica';
     width: 100%;
     overflow-x: hidden;
+}
+
+.sectionTitle{
+    font-size: 18px;
+    letter-spacing: var(--normalLS);
+    line-height: 1.3rem;
+}
+
+/* 開業するためにspanのdisplayをblcok */
+.newLine{
+    display: block;
+}
+
+.font_mainColor{
+    color: var(--maincolor);
+}
+section{
+    text-align: center;
 }
 
 header {
@@ -87,7 +108,6 @@ header {
     flex-direction: column;
     align-items: center;
     height: 100%;
-    text-align: center;
     position: relative;
 }
 
@@ -121,7 +141,6 @@ header {
     padding: 10px 0px;
     background-color: var(--maincolor);
     color: white;
-    text-align: center;
     letter-spacing: 0.05em;
     line-height: 1.5em;
 }
@@ -210,7 +229,6 @@ div .topSection_inquiry_sns_share::before {
     position: relative;
     --bracketPadding: 10px;
     padding: var(--bracketPadding);
-    text-align: center;
 }
 
 .introduction_bracketArea {
@@ -253,7 +271,6 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
     letter-spacing: 0.02rem;
     line-height: 1.8rem;
     margin: 30px 0px;
-    text-align: center;
     font-weight: lighter;
 }
 
@@ -285,7 +302,6 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
     height: 60px;
     border-radius: 50%;
     background-color: var(--maincolor);
-    text-align: center;
     position: absolute;
     margin: 0px auto;
     left: 0;
@@ -315,7 +331,6 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
 
 .about_content_description{
     letter-spacing: 0.2rem;
-    text-align: center;
     line-height: 1.5rem;
     font-size: 15px;
 }
@@ -328,17 +343,15 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
 
 .about_content_skils{
     background-color: white;
-    padding: 15px;
+    padding: 8px 15px 8px;
     border: solid 2px var(--maincolor);
     width: 75%;
     border-radius: 5px;
-    text-align: center;
     margin: 40px auto;
 }
 
 .about_content_skils_title{
     letter-spacing: var(--normalLS);
-    text-align: center;
     line-height: 1.5rem;
     font-size: 15px;
 }
@@ -365,4 +378,73 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
     line-height: 0.9rem;
     font-weight: lighter;
 }
+
+/* steps */
+.steps{
+    background-image: url('../img/background/aboutsecondbgsp.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 40px 0px;
+}
+.steps_content{
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.steps_content_stepsTitleContainer{
+    margin: 20px 0px;
+}
+
+.steps_content_stepsTitleDescription > p{
+    line-height: var(--normalLH);
+    font-size: 13px;
+}
+
+.steps_content_cards{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin: 0 auto;
+    margin-top: 38px;
+
+}
+
+.steps_content_cards > div{
+    width: 85%;
+    background-color: white;
+    border-radius: 4px;
+    padding: 15px 50px;
+    font-size: 12px;
+    margin-bottom: 15px;
+
+}
+
+.steps_content_cards_step{
+    width: 88%;
+    line-height: 1.2rem;
+    background-color: var(--maincolor);
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.steps_content_cards_step ~ p{
+    font-weight: bold;
+    margin: 15px 0px 5px 0px;
+}
+
+.steps_content_cards_title{
+    margin: 15px 0px 5px 0px;
+}
+
+.steps_content_cards_description{
+    letter-spacing: 1.5px;
+}
+
+
 /* medium screen */
