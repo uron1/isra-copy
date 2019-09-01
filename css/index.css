@@ -303,7 +303,7 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
 }
 
 .about_content {
-    padding-top: 80px;
+    padding: 40px 0px;
     background-color: #FCF5E2;
 }
 
@@ -317,7 +317,7 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
     letter-spacing: 0.2rem;
     text-align: center;
     line-height: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 15px;
 }
 
 
@@ -328,7 +328,7 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
 
 .about_content_skils{
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     border: solid 2px var(--maincolor);
     width: 75%;
     border-radius: 5px;
@@ -352,7 +352,7 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
 }
 
 .about_content_skils_container_skil{
-   padding: 8px 5px;
+   padding: 15px 8px;
 }
 
 .about_content_skils_container_skil > img{
@@ -363,5 +363,6 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
     font-size: 10px;
     letter-spacing: var(--normalLS);
     line-height: 0.9rem;
+    font-weight: lighter;
 }
 /* medium screen */
