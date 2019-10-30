@@ -29,7 +29,7 @@ body {
 }
 
 .sectionTitle {
-    font-size: 18px;
+    font-size: var(--normalTitle);
     /* letter-spacing: var(--normalLS); */
     line-height: 1.3rem;
 }
@@ -863,8 +863,24 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
 
 }
 /* riskZero */
+
 .riskZero{
     background-color: #2F6CA4;
     padding: 20px 0px;
+    color: white;
 }
+
+/* order */
+
+.order_title{
+    padding: 30px 0px;
+}
+
+.order_title:before{
+	content:'\f109';
+    font-family:'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 0.5rem;
+}
+
 /* medium screen */
