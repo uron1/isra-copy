@@ -804,9 +804,7 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
     padding: 40px 0px;
 
 }
-.curriculum > div{
 
-}
 
 .curriculum_title, .curriculum_description{
     color: white;
@@ -872,8 +870,14 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
 
 /* order */
 
+.order_openUnit{
+    width: 90%;
+    margin-bottom: 10px;
+}
+
 .order_title{
     padding: 30px 0px;
+    font-weight: bold;
 }
 
 .order_title:before{
@@ -881,6 +885,82 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
     font-family:'Font Awesome 5 Free';
     font-weight: 900;
     margin-right: 0.5rem;
+}
+
+.toggle_inner{
+    background-color: #FCF5E2;
+    overflow: hidden;
+    max-height: 0px;
+    transition-property: max-height;
+    transition-duration: 0.5s;
+    font-size: var(--datailText);
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.toggle_inner > div{
+    padding: 10px;
+}
+
+#toggle{
+    display: none;
+}
+
+#toggle:checked ~ .toggle_inner{
+    max-height: 300px;
+
+}
+
+.toggle_label{
+    font-size: var(--quasiTitle);
+    display: flex;
+}
+
+.toggle_label > div{
+    line-height: 3;
+}
+
+.toggle_title{
+    background-color: #FCF5E2;
+    margin: 0 auto;
+    position: relative;
+}
+
+.toggle_label > i{
+    color: #EEC360;
+}
+
+.toggle_label > i::before{
+    position: relative;
+    top: 8px;
+    margin: 0 15px;
+}
+
+.arrow{
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    zoom: 1.5;
+}
+
+.arrow::before{
+    content: '\f107';
+    font-family:'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+#toggle:checked ~ div > label > .arrow::before{
+    content: '\f106';
+    font-family:'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.toggle_inner > div > p:nth-of-type(1), .toggle_inner > div > p:nth-of-type(2){
+    font-weight: bold;
+}
+
+.toggle_inner > div > p{
+    padding-bottom: 10px;
 }
 
 /* medium screen */
