@@ -902,13 +902,12 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
     padding: 10px;
 }
 
-#toggle{
+.order_openUnit > input{
     display: none;
 }
 
-#toggle:checked ~ .toggle_inner{
+.order_openUnit > input:checked ~ .toggle_inner{
     max-height: 300px;
-
 }
 
 .toggle_label{
@@ -949,7 +948,7 @@ div .bracketArea_leftBracket, div .bracketArea_rightBracket {
     font-weight: 900;
 }
 
-#toggle:checked ~ div > label > .arrow::before{
+.order_openUnit > input:checked ~ div > label > .arrow::before{
     content: '\f106';
     font-family:'Font Awesome 5 Free';
     font-weight: 900;
