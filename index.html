@@ -408,7 +408,7 @@
             <div class="toggle_title">
                 <label for="toggle" class="toggle_label">
                     <i class="fab fa-skype fa-2x"></i>
-                    <div>事前課題の提出</div>
+                    <div>Skypeで事前コンサル</div>
                     <div class="arrow"></div>
                 </label>
 
@@ -425,9 +425,39 @@
         </div>
 
 
+
     </section>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        let toggles = $('input[type="checkbox"]');
 
+
+        toggles.each(function (i, element) {
+            let inner = $(element.parentElement).find('div:nth-of-type(2)');
+            // let arrow = $(element)
+            console.log($(inner).attr('class'));
+            
+            $(element).on('click', function () {
+                let state = toggles.prop('checked');
+                
+                
+
+                if (state) {
+                    inner.addClass('toggle_open');
+                    inner.removeClass('toggle_close');
+                } else {
+                    inner.addClass('toggle_close');
+                    inner.removeClass('toggle_open');
+                }
+            });
+
+
+        });
+
+
+    </script>
 </body>
 
 </html>
